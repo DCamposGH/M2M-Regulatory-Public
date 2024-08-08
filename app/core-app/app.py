@@ -34,19 +34,19 @@ home = st.Page("home/home.py", title="Home", icon=":material/home:")
 dashboard = st.Page("reports/dashboard.py", title="Dashboard", icon=":material/dashboard:")
 # Tools options / pages
 risk_analyser = st.Page("tools/risk_analyser.py", title="Risk Analyser", icon=":material/bug_report:")
-chatbot = st.Page("tools/chat.py", title="Chatbot", icon=":material/smart_toy:")
 # Future planned enhancements
 alerts = st.Page("enhancements/alerts.py", title="Alerts", icon=":material/precision_manufacturing:")
 eligibility = st.Page("enhancements/eligiblity.py", title="Eligiblity", icon=":material/precision_manufacturing:")
 risk_assess = st.Page("enhancements/risk_assess.py", title="Risk Assessment", icon=":material/precision_manufacturing:")
+chatbot = st.Page("tools/chat.py", title="Chatbot", icon=":material/smart_toy:")
 
 if st.session_state.logged_in:
     pg = st.navigation(
         {
             "Home": [home],
             "Reports": [dashboard],
-            "Tools": [risk_analyser, chatbot],
-            "Enhancements": [alerts, eligibility, risk_assess],
+            "Tools": [risk_analyser],
+            "Enhancements": [alerts, eligibility, risk_assess, chatbot],
             "Logout": [logout_page]
         }
     )

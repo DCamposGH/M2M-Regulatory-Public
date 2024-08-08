@@ -3,12 +3,12 @@ import streamlit as st
 from openai import OpenAI
 from openai import AssistantEventHandler
 
-client = OpenAI(api_key="sk-proj-OBBJL8XqOVJORUvwBx9aT3BlbkFJSzqD2oEE5KLweiGpHcze")
+client = OpenAI(api_key="")
 
 thread = client.beta.threads.create()
 
 # Set the assistant ID and initialize the OpenAI client with your API key
-assistant_id = "asst_uq1aMKOkWHuJCH4kKxPO3Jqe"
+assistant_id = ""
 
 st.title("💬 Regulatory Analyst Chatbot")
 st.caption("🚀 A streamlit chatbot with information on regulatory dataset, entities, and risk categories")
